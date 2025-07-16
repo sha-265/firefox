@@ -254,12 +254,12 @@ class ReaderView {
     if (article.dir) {
       return article.dir;
     }
-
+    
     if (["ar", "fa", "he", "ug", "ur"].includes(article.language)) {
       return "rtl";
     }
 
-    return "ltr";
+    return "auto";
   }
 
   getTitle(article) {
